@@ -47,7 +47,6 @@ body {
  <script type="text/javascript" src="../js/jquery.js"></script>
  <script type="text/javascript" src="../js/jQuery-fileinput.js"></script>
  <link rel="stylesheet" href="../css/extra.css" />
- <link rel="stylesheet" href="./css/enhanced.css" />
 </head>
 <body style="background-color: #F3EFEB">
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">

@@ -34,11 +34,15 @@ class ProyectoreController {
 			} catch (Exception e) {
 			  println "ERROR subiendo foto." + e.toString()
 			}
-			render(view: "/registrate")
+			redirect(url: "/registrate")
 		} else {
 		  println foto.errors
 		  render(view:"/subi-tu-foto", model: ['foto': foto])
 		}
+	}
+	
+	def registrate = {
+		render(view: "/registrate")
 	}
 	
 	def registratePost = {
