@@ -1,0 +1,298 @@
+/* Cone */
+.ch-layer .ch-layer-cone {
+	background-image: url('../assets/layer.png');
+	display:block;
+	position:absolute;
+	width:16px;
+	height:8px;
+}
+
+.ch-layer.ch-left .ch-layer-cone {
+	left: 12px;
+}
+
+.ch-layer.ch-right .ch-layer-cone {
+	height: 16px;
+	width: 8px;
+	left: -8px;
+}
+
+.ch-layer.ch-top .ch-layer-cone {
+	background-position: 0 -8px;
+	bottom: -8px;
+	top: auto;
+}
+
+.ch-layer.ch-bottom .ch-layer-cone {
+	height: 8px;
+	width: 16px;
+	top: -8px;
+}
+
+.ch-layer.ch-bottom.ch-right .ch-layer-cone,
+/* Deprecated */
+.ch-layer.ch-right.ch-bottom .ch-cone {
+	right: 12px;
+	left: auto;
+	height: 8px;
+	width: 16px;
+}
+
+.ch-layer.ch-right.ch-top .ch-layer-cone {
+	height: 8px;
+	width: 16px;
+	right: 12px;
+	left: auto;
+}
+
+/* IE 6,7 */
+.lt-ie8 .ch-layer,
+/* Deprecate */
+.ie6 .ch-layer,
+.ie7 .ch-layer {
+	width:280px;
+}
+
+
+/* IE6 */
+.lt-ie7 .ch-layer .ch-layer-cone,
+/* Deprecated */
+.ie6 .ch-layer .ch-layer-cone {
+	font-size:0;
+	line-height:0;
+}/* Menu */
+.ch-menu {
+	max-width:300px;
+}
+
+
+/*
+*  Icons and Message Boxes
+*/
+.ch-ico-attention,
+.ch-ico-check,
+.ch-ico-error,
+.ch-ico-help,
+.ch-ico-information,
+.ch-ico-ok,
+.ch-message-attention,
+.ch-message-check,
+.ch-message-error,
+.ch-message-help,
+.ch-message-information,
+.ch-message-ok,
+/* Deprecate */
+.ch-ico,
+.ch-message,
+.ico,
+.message {
+	background: url(../assets/icons.png) no-repeat;
+}
+
+/* Icons */
+.ch-ico-attention,
+.ch-ico-check,
+.ch-ico-error,
+.ch-ico-help,
+.ch-ico-information,
+.ch-ico-ok,
+/* Deprecate */
+.ch-ico,
+.ico {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-indent: 99px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ch-ico-attention,
+/* Deprecate */
+.ch-ico.ch-attention,
+.ico.attention {
+	background-position: -77px -110px;
+}
+
+.ch-ico-check,
+/* Deprecate */
+.ch-ico.ch-check,
+.ico.check {
+	background-position: -43px -144px;
+}
+
+.ch-ico-error,
+/* Deprecate */
+.ch-ico.ch-error,
+.ico.error {
+	background-position: -179px -9px;
+}
+
+.ch-ico-help,
+/* Deprecate */
+.ch-ico.ch-help,
+.ico.help {
+	background-position: -111px -76px;
+}
+
+.ch-ico-information,
+/* Deprecate */
+.ch-ico.ch-information,
+.ico.information {
+	background-position: -145px -42px;
+}	
+
+.ch-ico-ok,
+/* Deprecate */
+.ch-ico.ch-ok,
+.ico.ok {
+	background-position: -9px -178px;
+	height: 17px;
+}
+
+
+/* Message boxes */
+.ch-message-attention,
+.ch-message-check,
+.ch-message-error,
+.ch-message-help,
+.ch-message-information,
+.ch-message-ok,
+/* Deprecated */
+.ch-message {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 0 5px;
+	padding: 8px 10px 8px 34px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.ch-message-attention,
+/* Deprecated */
+.ch-message.ch-attention {	
+	background-color: #FCF8CB;
+	background-position: -68px -101px;
+	border-color: #E4E2B8;
+}
+
+
+.ch-message-check,
+/* Deprecated */
+.ch-message.ch-check {
+	background-color: #E8FFD7;
+	background-position: -34px -135px;
+	border-color: #C7DDBC;
+	color: #487210;
+}
+	
+.ch-message-error,
+/* Deprecated */
+.ch-message.ch-error {	
+	background-color:#fbd9db;
+	background-position: -170px 0px;
+	border-color: #f7a9ae;
+	color:#600;
+}		
+
+.ch-message-help,
+/* Deprecated */
+.ch-message.ch-help {	
+	background-color: #F6F9F3;
+	background-position: -102px -67px;
+	border-color: #cccccc;
+}
+	
+.ch-message-information,
+/* Deprecated */
+.ch-message.ch-information {	
+	background-color: #E5EBFD;
+	background-position: -136px -33px;
+	border-color: #A0B1DE;
+}
+	
+.ch-message-ok,
+/* Deprecated */
+.ch-message.ch-ok {
+	background-color: #E8FFD7;
+	background-position: 0 -169px;
+	border-color: #C7DDBC;
+}
+
+.ch-helper,.ch-validator{
+	background-color:#fbd9db;
+	border:1px solid #f7a9ae;
+	color:#600;font-size:12px;
+	padding:5px;
+	}
+	
+.ch-helper{
+	display:inline-block;
+	width:160px;position:absolute;
+	z-index:300;border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	}
+
+.errores {
+	display:block;
+	margin-top: 10px;
+	width: 300px;
+	height:auto;
+	background-color: #FFEBE8;
+border-color: #DD3C10;
+padding: 10px;
+border-width: 1px;
+border-style: solid;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 47px;
+}
+
+.title {
+ font-size:11pt;
+ text-decoration: bold;	
+}
+.gracias {
+	background-color: white;
+	border: 1px solid #CCC;
+	font-size: 14px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	color: #333;
+	line-height: 1.28;
+	text-align: left;
+	direction: ltr;
+	padding: 15px;
+	width: 473px;
+	display:hidden;
+}
+.errorDescription {
+	top: 560px;
+	width: 220px;
+	height:20px;
+}
+.errorArchivo {
+	top: 590px;
+	left:625px;
+	width: 220px;
+	height:20px;
+}
+.errorTyc {
+	top: 635px;
+	width: 320px;
+	height:20px;
+}
+.ch-helper-content {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.ch-hide,
+/* Deprecated */
+.o {
+	display: none;
+}
