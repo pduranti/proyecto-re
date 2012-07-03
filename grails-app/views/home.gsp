@@ -63,8 +63,11 @@ body {
     <table width="318" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
         <td width="318"><div align="right">
-        <a href="http://www.facebook.com/ProyectoRe">
-        <img src="./images/facebook-twitter.jpg" alt="facebook twitter proyecto re" width="178" height="48"></div></td>
+        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
+           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48"></div></td>
+        </a>
+        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
+           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48"></div></td>
         </a>
       </tr>
     </tbody></table></td>
@@ -85,7 +88,7 @@ body {
           <tr>
             <td height="20" background="./images/menu-fondo.jpg" >
             <g:link url="/categoria?categ=plastico" class="style6">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLÁSTICO<img src="./images/menu-linea.png" width="141" height="10">
             </g:link>
             </td>
             </tr>
@@ -128,7 +131,7 @@ body {
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
             <g:link url="/categoria?categ=organicos" class="style6">
-            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGÁNICOS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
               </td>
