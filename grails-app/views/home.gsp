@@ -27,6 +27,7 @@ body {
 	color: #6F6561;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+	text-decoration:none;
 }
 -->
 </style>
@@ -61,7 +62,10 @@ body {
     <br>
     <table width="318" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
-        <td width="318"><div align="right"><img src="./images/facebook-twitter.jpg" alt="facebook twitter proyecto re" width="178" height="48"></div></td>
+        <td width="318"><div align="right">
+        <a href="http://www.facebook.com/ProyectoRe">
+        <img src="./images/facebook-twitter.jpg" alt="facebook twitter proyecto re" width="178" height="48"></div></td>
+        </a>
       </tr>
     </tbody></table></td>
   </tr>
@@ -79,8 +83,8 @@ body {
             <td height="17"><img src="./images/menu-top.jpg" width="163" height="17"></td>
             </tr>
           <tr>
-            <td height="20" background="./images/menu-fondo.jpg" class="style6">
-            <g:link url="/categoria?categ=plastico">
+            <td height="20" background="./images/menu-fondo.jpg" >
+            <g:link url="/categoria?categ=plastico" class="style6">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10">
             </g:link>
             </td>
@@ -88,7 +92,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-             <g:link url="/categoria?categ=metal">
+             <g:link url="/categoria?categ=metal" class="style6">
             	<span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>	
             </td>
@@ -96,7 +100,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-             <g:link url="/categoria?categ=madera">
+             <g:link url="/categoria?categ=madera" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MADERA<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
               </g:link>
@@ -105,7 +109,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=vidrio">
+            <g:link url="/categoria?categ=vidrio" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIDRIO<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
               </g:link>
@@ -114,7 +118,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=papel">
+            <g:link url="/categoria?categ=papel" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPEL<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
@@ -123,7 +127,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=organicos">
+            <g:link url="/categoria?categ=organicos" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
@@ -132,7 +136,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=productos">
+            <g:link url="/categoria?categ=productos" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTOS</span><br>
               <span class="style6"><img src="./images/menu-linea.png" width="141" height="10"></span>
             </g:link>
@@ -141,7 +145,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=otros">
+            <g:link url="/categoria?categ=otros" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTROS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
             </g:link>

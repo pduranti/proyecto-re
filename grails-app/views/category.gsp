@@ -27,6 +27,13 @@ body {
 	color: #6F6561;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+	text-decoration:none;
+}
+.h1 {
+    color: #6F6561;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	text-decoration:none;
 }
 .style7 {color: #BE2327}
 .style9 {font-size: 12px}
@@ -43,7 +50,7 @@ body {
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><a href="http://www.viajerosunidos.com.ar/proyectore/home.html"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
+    <td width="31%" rowspan="2" valign="top"><a href="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
@@ -79,8 +86,8 @@ body {
             <td height="17"><img src="./images/menu-top.jpg" width="163" height="17"></td>
             </tr>
           <tr>
-            <td height="20" background="./images/menu-fondo.jpg" class="style6">
-            <g:link url="/categoria?categ=plastico">
+            <td height="20" background="./images/menu-fondo.jpg" >
+            <g:link url="/categoria?categ=plastico" class="style6">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10">
             </g:link>
             </td>
@@ -88,7 +95,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-             <g:link url="/categoria?categ=metal">
+             <g:link url="/categoria?categ=metal" class="style6">
             	<span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>	
             </td>
@@ -96,7 +103,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-             <g:link url="/categoria?categ=madera">
+             <g:link url="/categoria?categ=madera" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MADERA<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
               </g:link>
@@ -105,7 +112,7 @@ body {
           
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=vidrio">
+            <g:link url="/categoria?categ=vidrio" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIDRIO<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
               </g:link>
@@ -114,7 +121,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=papel">
+            <g:link url="/categoria?categ=papel" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPEL<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
@@ -123,7 +130,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=organicos">
+            <g:link url="/categoria?categ=organicos" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
@@ -132,7 +139,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=productos">
+            <g:link url="/categoria?categ=productos" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTOS</span><br>
               <span class="style6"><img src="./images/menu-linea.png" width="141" height="10"></span>
             </g:link>
@@ -141,7 +148,7 @@ body {
           
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
-            <g:link url="/categoria?categ=otros">
+            <g:link url="/categoria?categ=otros" class="style6">
             <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTROS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
             </g:link>
@@ -158,7 +165,7 @@ body {
     <p><img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
       <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38"></p></td>
     <td valign="top"><p><br>
-      <h1>${categ.capitalize()}</h1>
+      <h1 class="h1">${categ.capitalize()}</h1>
       
        <div id="galleria" style="width: 723px; height: 600px; ">
             <img src="${path}/1.jpg">
