@@ -63,12 +63,15 @@ body {
     <table width="318" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
         <td width="318"><div align="right">
-        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
-           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48"></div></td>
-        </a>
-        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
-           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48"></div></td>
-        </a>
+	        <img src="./images/seguinos.jpg" alt="facebook proyecto re" width="81" height="48">
+	        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
+	           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48">
+	        </a>
+	        <a href="https://twitter.com/proyecto_RE" target="_blank">
+	           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48">
+	        </a>
+       
+        </div></td>
       </tr>
     </tbody></table></td>
   </tr>
