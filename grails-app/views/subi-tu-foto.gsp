@@ -75,66 +75,12 @@ body {
     </tbody></table></td>
   </tr>
 </tbody></table>
-<table width="968" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td width="245" valign="top"><table width="163" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="163"><br>
-          <img src="./images/categorias.jpg" alt="proyecto re" width="163" height="38"></td>
-      </tr>
-      <tr>
-        <td height="242"><table width="139" border="0" cellspacing="0" cellpadding="0">
-          <tbody><tr>
-            <td height="17"><img src="./images/menu-top.jpg" width="163" height="17"></td>
-            </tr>
-          <tr>
-            <td height="20" background="./images/menu-fondo.jpg" class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10"></td>
-            </tr>
-          
-          <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MADERA<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIDRIO<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPEL<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTOS</span><br>
-              <span class="style6"><img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTROS<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
-          </tr>
-          
-          <tr>
-            <td height="17" background="./images/menu-bottom.jpg"></td>
-          </tr>
-        </tbody></table></td>
-      </tr>
-      
-      
-    </tbody></table>
-    <p><img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38"></p></td>
+
+ <g:render template="/templates/category_nav" />
+
+  <p>
+    <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
+  </p></td>
     <td width="723" valign="top"><p><br>
       <img src="./images/subi-tu-foto-title.jpg" alt="proyecto re" width="136" height="23">&nbsp;&nbsp;&nbsp;<img src="./images/linea.jpg" alt="proyecto re" width="403" height="7"></p>
       <table width="386" height="436" border="0" cellpadding="0" cellspacing="0">
