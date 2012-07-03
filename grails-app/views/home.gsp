@@ -77,8 +77,13 @@ body {
     <g:render template="/templates/category_nav" />
 
    
-    <p><img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38"></p></td>
+    <p>
+      <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
+
+      <g:link url="/subir-foto">
+        <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+      </g:link>
+
     <td width="744"><p><br>
     
      <div class="gracias ch-hide" id="gracias">Gracias por compartir tu foto!</div>
@@ -116,7 +121,7 @@ body {
     <table width="535" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
         <td width="535"><div align="center">
-        	<g:link controller="proyectore" action="subirFoto">
+        	<g:link url="subir-foto">
         		<img src="./images/subir-mi-foto.jpg" alt="proyecto re la marca editora" width="304" height="183" border="0">
         	</g:link>
         </div></td>
