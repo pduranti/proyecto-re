@@ -79,8 +79,8 @@ body {
  <g:render template="/templates/category_nav" />
 
   <p>
-  <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38"></p></td>
+    <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
+  </p></td>
     <td width="723" valign="top"><p><br>
       <img src="./images/subi-tu-foto-title.jpg" alt="proyecto re" width="136" height="23">&nbsp;&nbsp;&nbsp;<img src="./images/linea.jpg" alt="proyecto re" width="403" height="7"></p>
       <table width="386" height="436" border="0" cellpadding="0" cellspacing="0">
