@@ -78,7 +78,10 @@ body {
 
     <p>
       <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+
+      <g:link url="/subir-foto">
+        <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+      </g:link>
     </p>
     </td>
     
