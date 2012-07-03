@@ -41,7 +41,8 @@ body {
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><a href="http://www.viajerosunidos.com.ar/proyectore/home.html"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
+    <td width="31%" rowspan="2" valign="top">
+      <a href="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
