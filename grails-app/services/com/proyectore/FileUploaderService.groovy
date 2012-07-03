@@ -5,24 +5,36 @@ import org.springframework.web.multipart.MultipartFile
 
 class FileUploaderService {
 
-	String basePath = "/opt/fotos-upload/"
+    String basePath = "/fotos-upload/"
 	
     static transactional = true
 
-    def uploadFile(MultipartFile file, String name, String category) {
-
-		def servletContext = ServletContextHolder.servletContext
-		def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
+    def uploadImage(MultipartFile file, String name, String category) {
+	def servletContext = ServletContextHolder.servletContext
+	def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
 		
-		def storagePathDirectory = new File(storagePath)
-		if (!storagePathDirectory.exists()) {
-			if (storagePathDirectory.mkdirs()) {
-				println "CREO LA CARPETA ${storagePathDirectory}"
-			}
-		}
+	def storagePathDirectory = new File(storagePath)
+	if (!storagePathDirectory.exists()) {
+	    if (storagePathDirectory.mkdirs()) {
+	        println "CREO LA CARPETA ${storagePathDirectory}"
+	    }
+	}
 		
-		if (!file.isEmpty()) {
-			file.transferTo(new File("${storagePath}/${name}"))
-		}
+	if (!file.isEmpty()) {
+	    file.transferTo(new File("${storagePath}/${name}"))
+	}
+    }
+    
+    def getImagesForCategory(String category) {
+    	def servletContext = ServletContextHolder.servletContext
+	def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
+	def imageDir = new File(storagePath)
+	
+	def list = []
+	imageDir.eachFileMatch(~/.*.(png|PNG|jpg|JPG)/) { file ->
+  		list << file
+	}
+	
+	return list
     }
 }
