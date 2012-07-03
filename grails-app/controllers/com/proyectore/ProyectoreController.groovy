@@ -30,7 +30,7 @@ class ProyectoreController {
 			println file.getOriginalFilename()
 			//println file.getContentType()
 			try {
-				fileUploaderService.uploadFile(file, file.getOriginalFilename(), foto.categoria)
+				fileUploaderService.uploadImage(file, file.getOriginalFilename(), foto.categoria)
 			} catch (Exception e) {
 			  println "ERROR subiendo foto." + e.toString()
 			}
@@ -56,8 +56,7 @@ class ProyectoreController {
 	}
 	
 	def categoria = {
-		def categoryPath = "/opt/fotos-upload/" + params.categ.toLowerCase()
-		
-		render(view: "/category", model: [categ: params.categ, path: categoryPath])
+	  def images = fileUploaderService.getImagesForCategory(params.categ)
+	  render(view: "/category", model: [categ: params.categ, images: images])
 	}
 }
