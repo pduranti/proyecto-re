@@ -73,6 +73,9 @@ body {
     </tbody></table></td>
   </tr>
 </tbody></table>
+
+  <g:render template="/templates/category_nav" />
+
 <table width="968" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="224" valign="top"><table width="163" border="0" cellspacing="0" cellpadding="0">
