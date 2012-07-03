@@ -69,7 +69,7 @@ body {
 
     <p>
      <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-     <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+     
     </p>
     </td>
     <td width="723" valign="top"><p><br>
