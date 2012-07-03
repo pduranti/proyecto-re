@@ -6,14 +6,13 @@ import org.springframework.web.multipart.MultipartFile
 class FileUploaderService {
 
 	String basePath = "/opt/fotos-upload/"
-	String staticBasePath = "/opt/fotos-upload/"
 	
     static transactional = true
 
     def uploadFile(MultipartFile file, String name, String category) {
 
 		def servletContext = ServletContextHolder.servletContext
-		def storagePath = staticBasePath + category.toLowerCase()
+		def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
 		
 		def storagePathDirectory = new File(storagePath)
 		if (!storagePathDirectory.exists()) {
