@@ -54,4 +54,10 @@ class ProyectoreController {
 		  render(view: "/registrate", model: [usuario:user])
 		}
 	}
+	
+	def categoria = {
+		def categoryPath = "/opt/fotos-upload/" + params.categ.toLowerCase()
+		
+		render(view: "/category", model: [categ: params.categ, path: categoryPath])
+	}
 }

@@ -79,41 +79,73 @@ body {
             <td height="17"><img src="./images/menu-top.jpg" width="163" height="17"></td>
             </tr>
           <tr>
-            <td height="20" background="./images/menu-fondo.jpg" class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10"></td>
+            <td height="20" background="./images/menu-fondo.jpg" class="style6">
+            <g:link url="/categoria?categ=plastico">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10">
+            </g:link>
+            </td>
             </tr>
           
           <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="19" background="./images/menu-fondo.jpg">
+             <g:link url="/categoria?categ=metal">
+            	<span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span>
+             </g:link>	
+            </td>
           </tr>
           
           <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MADERA<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="19" background="./images/menu-fondo.jpg">
+             <g:link url="/categoria?categ=madera">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MADERA<br>
+              <img src="./images/menu-linea.png" width="141" height="10"></span>
+              </g:link>
+             </td>
           </tr>
           
           <tr>
-            <td height="19" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIDRIO<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="19" background="./images/menu-fondo.jpg">
+            <g:link url="/categoria?categ=vidrio">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIDRIO<br>
+              <img src="./images/menu-linea.png" width="141" height="10"></span>
+              </g:link>
+              </td>
           </tr>
           
           <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPEL<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="23" background="./images/menu-fondo.jpg">
+            <g:link url="/categoria?categ=papel">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPEL<br>
+              <img src="./images/menu-linea.png" width="141" height="10"></span>
+             </g:link>
+              </td>
           </tr>
           
           <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="23" background="./images/menu-fondo.jpg">
+            <g:link url="/categoria?categ=organicos">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
+              <img src="./images/menu-linea.png" width="141" height="10"></span>
+             </g:link>
+              </td>
           </tr>
           
           <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTOS</span><br>
-              <span class="style6"><img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="23" background="./images/menu-fondo.jpg">
+            <g:link url="/categoria?categ=productos">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTOS</span><br>
+              <span class="style6"><img src="./images/menu-linea.png" width="141" height="10"></span>
+            </g:link>
+              </td>
           </tr>
           
           <tr>
-            <td height="23" background="./images/menu-fondo.jpg"><span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTROS<br>
-              <img src="./images/menu-linea.png" width="141" height="10"></span></td>
+            <td height="23" background="./images/menu-fondo.jpg">
+            <g:link url="/categoria?categ=otros">
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTROS<br>
+              <img src="./images/menu-linea.png" width="141" height="10"></span>
+            </g:link>
+              </td>
           </tr>
           
           <tr>
