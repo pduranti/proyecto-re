@@ -88,7 +88,7 @@ body {
           <tr>
             <td height="20" background="./images/menu-fondo.jpg" >
             <g:link url="/categoria?categ=plastico" class="style6">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLASTICO<img src="./images/menu-linea.png" width="141" height="10">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLÁSTICO<img src="./images/menu-linea.png" width="141" height="10">
             </g:link>
             </td>
             </tr>
@@ -96,7 +96,8 @@ body {
           <tr>
             <td height="19" background="./images/menu-fondo.jpg">
              <g:link url="/categoria?categ=metal" class="style6">
-            	<span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL<img src="./images/menu-linea.png" width="141" height="10"></span>
+            	<span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METAL
+                <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>	
             </td>
           </tr>
@@ -131,7 +132,7 @@ body {
           <tr>
             <td height="23" background="./images/menu-fondo.jpg">
             <g:link url="/categoria?categ=organicos" class="style6">
-            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGANICOS<br>
+            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORGÁNICOS<br>
               <img src="./images/menu-linea.png" width="141" height="10"></span>
              </g:link>
               </td>
@@ -158,35 +159,32 @@ body {
             <td height="17" background="./images/menu-bottom.jpg"></td>
           </tr>
         </tbody></table></td>
-      </tr>
-      
-      
-    </tbody></table>
-    <p><img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38"></p></td>
+      </tr>  
+     </tbody></table>
+    <p>
+      <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
+      <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+    </p>
+    </td>
+    
     <td valign="top"><p><br>
       <h1 class="h1">${categ.capitalize()}</h1>
       
        <div id="galleria" style="width: 723px; height: 600px; ">
-            <img src="${path}/1.jpg">
-            <img src="${path}/2.jpg">
-            <img src="${path}/3.jpg">
-            <img src="${path}/4.jpg">
+           <g:each in="${images}">
+              <img src="${it}">
+           </g:each>
         </div>
         <script>
             Galleria.loadTheme('./js/galleria/themes/classic/galleria.classic.min.js');
             Galleria.run('#galleria');
         </script>
+       <br>
+       <br>
     </td>
   </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<script>
-
-$("#submit").click(function(event){
-	event.preventDefault();
-	document.forms["userForm"].submit();
-})
-</script>
 
 </body></html>
