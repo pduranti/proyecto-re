@@ -30,6 +30,7 @@ body {
 	color: #6F6561;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+        text-decoration:none;
 }
 .style7 {color: #BE2327}
 .style9 {font-size: 12px}
