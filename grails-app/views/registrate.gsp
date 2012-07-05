@@ -27,6 +27,7 @@ body {
 	color: #6F6561;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+        text-decoration:none;
 }
 .style7 {color: #BE2327}
 .style9 {font-size: 12px}
@@ -60,7 +61,16 @@ body {
     <br>
     <table width="318" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
-        <td width="318"><div align="right"><img src="./images/facebook-twitter.jpg" alt="facebook twitter proyecto re" width="178" height="48"></div></td>
+        <td width="318">
+          <div align="right">
+                <img src="./images/seguinos.jpg" alt="facebook proyecto re" width="81" height="48">
+	        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
+	           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48">
+	        </a>
+	        <a href="https://twitter.com/proyecto_RE" target="_blank">
+	           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48">
+	        </a>
+          </div></td>
       </tr>
     </tbody></table></td>
   </tr>
