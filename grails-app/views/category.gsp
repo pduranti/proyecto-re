@@ -73,7 +73,7 @@ body {
         <td width="318">
             <div align="right">
 		<img src="./images/seguinos.jpg" alt="facebook proyecto re" width="81" height="48">
-	        <a href="http://www.facebook.com/ProyectoRe" target="_blank">
+	        <a href="http://www.facebook.com/proyectoRE" target="_blank">
 	           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48">
 	        </a>
 	        <a href="https://twitter.com/proyecto_RE" target="_blank">
