@@ -36,6 +36,8 @@
     margin-right: 30px;
 }
 .galleria-thumbnails .galleria-image {
+    height: 50px;
+    width: 50px;
     background: #000;
     margin: 5px 5px 5px 5px;
     border: 1px solid #000;
