@@ -28,13 +28,14 @@ class FileUploaderService {
     def getImagesForCategory(String category) {
     	def servletContext = ServletContextHolder.servletContext
 	def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
-	def imageDir = new File(storagePath)
+	def storagePathDirectory = new File(storagePath)
 	
 	def list = []
-	imageDir.eachFileMatch(~/.*.(png|PNG|jpg|JPG)/) { file ->
-  		list << file
+	if (storagePathDirectory.exists()) {	
+	    storagePathDirectory.eachFileMatch(~/.*.(png|PNG|jpg|JPG)/) { file ->
+  		list << basePath + category.toLowerCase() + '/' + file.getName()
+	    }
 	}
-	
 	return list
     }
 }
