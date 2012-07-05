@@ -43,8 +43,10 @@ body {
 
  <script type="text/javascript" src="./js/jquery.js"></script>
  <script type="text/javascript" src="./js/galleria/galleria-1.2.7.min.js"></script>
+ <script type="text/javascript" src="./js/galleria/themes/classic/galleria.classic.min.js"></script>
  
  <link rel="stylesheet" href="./css/extra.css" />
+ <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
  
 <body>
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -98,15 +100,16 @@ body {
     <td valign="top"><p><br>
       <h1 class="h1">${categ.capitalize()}</h1>
       
-       <div id="galleria" style="width: 723px; height: 600px; ">
-           <g:each in="${images}">
-              <img src="${it}">
-           </g:each>
-        </div>
+       <g:if test="${images}">
+         <div id="galleria" style="width: 723px; height: 600px; ">
+             <g:each in="${images}">
+                <img src="${it}">
+             </g:each>
+          </div>
         <script>
-            Galleria.loadTheme('./js/galleria/themes/classic/galleria.classic.min.js');
             Galleria.run('#galleria');
         </script>
+       </g:if>
        <br>
        <br>
     </td>
