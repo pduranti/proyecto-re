@@ -6,7 +6,7 @@
 <style type="text/css">
 <!--
 body {
-	background-color: #F3EFEB;
+	background-color: #F4EFE9;
 }
 #Layer1 {
 	position:absolute;
@@ -21,23 +21,49 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 .style3 {color: #6F6561}
-.style4 {color: #BE2D29}
-.style5 {font-family: Arial, Helvetica, sans-serif}
-.style6 {
-	color: #6F6561;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	text-decoration:none;
-}
+
 .h1 {
     color: #6F6561;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 28px;
 	text-decoration:none;
 }
-.style7 {color: #BE2327}
-.style9 {font-size: 12px}
-.style10 {color: #BE2327; font-size: 12px; }
+.style4 {color: #BE2D29}
+.style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style6 {
+	color: #6F6561;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration:none;
+}
+.style7 {font-size: 13px}
+.style8 {
+	color: #BE2D29;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+.style9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+.style10 {font-family: Arial, Helvetica, sans-serif}
+
+.comments {
+font-size: 11px;
+font-family: Arial, Helvetica, sans-serif;
+color: #BE2D29;
+position: absolute;
+width: 720px;
+height: 115px;
+top:1300px;
+z-index: 1;
+}
+
 -->
 </style>
 
@@ -49,38 +75,56 @@ body {
  <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
  
 <body>
+
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><a href="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
+    <td width="31%" rowspan="2" valign="top"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274">
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
     <td height="242">&nbsp;</td>
-    <td valign="top"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0" background="./images/la-marca-andy-marquine.jpg">
+    <td valign="middle"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0">
       <tbody><tr>
-        <td width="216" height="149"><div align="right"><strong><span class="style2"><span class="style3">DE LOS EDITORES DE</span><br>
+        <td width="226" height="149"><div align="right"><strong><span class="style2"><span class="style3">DE LOS EDITORES DE</span><br>
             <span class="style4">PROYECTO CARTELE</span><br>
             <span class="style3">UNA IDEA DE </span><br>
           <span class="style4">ANDY MARQUINE</span></span></strong></div></td>
-        <td width="103"><br>
+        <td width="93"><br>
           &nbsp;&nbsp;&nbsp;<a href="http://www.lamarcaeditora.com/homeindex.php?lgr=arg" target="_blank"><img src="./images/la-marca-editora.png" alt="la marca editora" width="67" height="92" border="0"></a></td>
       </tr>
     </tbody></table>
+      <img src="./images/linea-2.jpeg" alt="proyectoRE" width="308" height="8">
+   </td>  
+  </tr>
+    </tbody></table>
     <br>
+    
+    <table width="971" border="0" align="center" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+	      <td valign="top">
+	      <table width="780" height="22" border="0" cellpadding="0" cellspacing="0">
+	      <tbody><tr>
+	        <td>
+	          <g:link url="/acerca-de" class="style6">
+	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
+	          </g:link>
+	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
+	        <img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
+	        <img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+	        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FproyectoRE%2F357558554296576&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
+	        
+	          <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
+	  
+	        </td>
+	        
+	      </tr>
+	    </tbody>
+	    </table>
     <table width="318" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
-        <td width="318">
-            <div align="right">
-		<img src="./images/seguinos.jpg" alt="facebook proyecto re" width="81" height="48">
-	        <a href="http://www.facebook.com/proyectoRE" target="_blank">
-	           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48">
-	        </a>
-	        <a href="https://twitter.com/proyecto_RE" target="_blank">
-	           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48">
-	        </a>
-             </div>
-        </td>
       </tr>
     </tbody></table></td>
   </tr>
@@ -89,8 +133,6 @@ body {
  <g:render template="/templates/category_nav" />
 
     <p>
-      <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-
       <g:link url="/subir-foto">
         <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
       </g:link>
@@ -98,24 +140,59 @@ body {
     </td>
     
     <td valign="top"><p><br>
-      <h1 class="h1">${categ.capitalize()}</h1>
+      <h1 class="h1">
+        <g:if test="${categ == 'plastico'}">
+          Plástico
+        </g:if>
+        <g:elseif test="${categ == 'organicos'}">
+          Orgánicos
+        </g:elseif>
+        <g:else>
+	      ${categ.capitalize()}</h1>
+        </g:else>
       
-       <g:if test="${images}">
-         <div id="galleria" style="width: 723px; height: 600px; ">
-             <g:each in="${images}">
-                <img src="${it}">
+       <g:if test="${fotos}">
+         <div id="galleria" style="width: 723px; height: 650px; ">
+             <g:each in="${fotos}">
+                <img src="/fotos-upload/${it.categoria}/${it.archivo}">
+                <p>
+                    <span class="style8" style="width:500px">Autor</span>:</span> <span class="style6">${ it.nombre}</span>
+                	<br>
+              		<span class="style8">Descripción:</span> <span class="style6">${it.descripcion}</span><br>
+            		<span class="style8">Lugar:</span> <span class="style6">${it.lugar}</span><br><br>
+            		<span class="style8">
+            		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+            		</span>
+                </p>
              </g:each>
           </div>
+          <br>
+          <br></br>
+          
         <script>
-            Galleria.run('#galleria');
+	        Galleria.run('#galleria', {
+	            dataConfig: function(img) {
+	                return {
+	                    description: $(img).next('p').html()
+	                }
+	            }
+	        });
         </script>
        </g:if>
        <br>
        <br>
     </td>
   </tr>
+  <tr >
+  <td></td>
+      </tr>
+    </tbody></table>
+  </td>
+  </tr>
 </tbody>
 </table>
+
+ 
 
 
 </body></html>

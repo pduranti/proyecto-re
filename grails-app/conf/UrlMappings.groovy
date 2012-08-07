@@ -9,6 +9,8 @@ class UrlMappings {
 
 		"/"(controller:"proyectore")
 		
+		"/acerca-de"(controller:"proyectore", action:"acercaDe")
+		
 		"/subir-foto"(controller:"proyectore", action:"subirFoto")
 		
 		"/subir-foto-post"(controller:"proyectore", action:"subirFotoPost")

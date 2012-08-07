@@ -9,7 +9,7 @@
 <style type="text/css">
 <!--
 body {
-	background-color: #F3EFEB;
+	background-color: #F4EFE9;
 }
 #Layer1 {
 	position:absolute;
@@ -32,7 +32,10 @@ body {
 	font-size: 13px;
         text-decoration:none;
 }
-.style7 {color: #BE2327}
+.style7 {
+	color: #BE2327;
+	font-size: 8pt;
+}
 .style9 {font-size: 12px}
 .style10 {color: #BE2327; font-size: 12px; }
 
@@ -50,47 +53,59 @@ body {
  <link rel="stylesheet" href="./css/extra.css" />
 </head>
 <body style="background-color: #F3EFEB">
+
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><a href="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274" border="0"></a>
+    <td width="31%" rowspan="2" valign="top"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274">
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
     <td height="242">&nbsp;</td>
-    <td valign="top"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0" background="./images/la-marca-andy-marquine.jpg">
+    <td valign="middle"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0">
       <tbody><tr>
-        <td width="216" height="149"><div align="right"><strong><span class="style2"><span class="style3">DE LOS EDITORES DE</span><br>
+        <td width="226" height="149"><div align="right"><strong><span class="style2"><span class="style3">DE LOS EDITORES DE</span><br>
             <span class="style4">PROYECTO CARTELE</span><br>
             <span class="style3">UNA IDEA DE </span><br>
           <span class="style4">ANDY MARQUINE</span></span></strong></div></td>
-        <td width="103"><br>
+        <td width="93"><br>
           &nbsp;&nbsp;&nbsp;<a href="http://www.lamarcaeditora.com/homeindex.php?lgr=arg" target="_blank"><img src="./images/la-marca-editora.png" alt="la marca editora" width="67" height="92" border="0"></a></td>
       </tr>
     </tbody></table>
-    <br>
-    <table width="318" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="318">
-          <div align="right">
-                <img src="./images/seguinos.jpg" alt="facebook proyecto re" width="81" height="48">
-	        <a href="http://www.facebook.com/proyectoRE" target="_blank">
-	           <img src="./images/facebook-proyectore.jpg" alt="facebook proyecto re" width="48" height="48">
-	        </a>
-	        <a href="https://twitter.com/proyecto_RE" target="_blank">
-	           <img src="./images/twitter-proyectore.jpg" alt="twitter proyecto re" width="48" height="48">
-	        </a>
-          </div></td>
-      </tr>
-    </tbody></table></td>
+      <img src="./images/linea-2.jpeg" alt="proyectoRE" width="308" height="8">
+   </td>  
   </tr>
-</tbody></table>
+    </tbody></table>
+    <br>
+    
+    <table width="971" border="0" align="center" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+	      <td valign="top">
+	      <table width="780" height="22" border="0" cellpadding="0" cellspacing="0">
+	      <tbody><tr>
+	        <td>
+	          <g:link url="/acerca-de" class="style6">
+	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
+	          </g:link>
+	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
+	        <img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
+	        <img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+	        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FproyectoRE%2F357558554296576&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
+	        </td>
+	        
+	      </tr>
+	    </tbody>
+	    </table>
+
+
+
+
 
  <g:render template="/templates/category_nav" />
 
-  <p>
-    <img src="./images/acerca-de.jpg" alt="proyecto re la marca editora" width="163" height="38"><br>
-  </p></td>
+  </td>
     <td width="723" valign="top"><p><br>
       <img src="./images/subi-tu-foto-title.jpg" alt="proyecto re" width="136" height="23">&nbsp;&nbsp;&nbsp;<img src="./images/linea.jpg" alt="proyecto re" width="403" height="7"></p>
       <table width="386" height="436" border="0" cellpadding="0" cellspacing="0">
@@ -98,11 +113,10 @@ body {
           <td width="386" height="36"><img src="./images/form-top.jpg" width="386" height="36"></td>
         </tr>
         <tr>
-          <td height="33" background="./images/form-back.jpg"><div align="center"><a href="./images/subi_tu_foto.gsp.html">
-          <img src="./images/paso-1.jpg" width="84" height="26" border="0"></a> 
-          <a href="http://www.viajerosunidos.com.ar/proyectore/subi-tu-foto-2.html">
-          <img src="./images/paso-2.jpg" width="84" height="26" border="0"></a><br>
-            <img src="./images/linea.png" width="341" height="4"></div></td>
+          <td height="33" background="./images/form-back.jpg">
+            <div align="center">
+            <img src="./images/linea.png" width="341" height="4">
+            </div></td>
         </tr>
         <tr>
           <td height="341" background="./images/form-back.jpg">
@@ -113,46 +127,70 @@ body {
 							<p class="error title">Oops! algo anduvo mal, verifica los errores.</p>
 							<p><g:each in="${foto?.errors?.getFieldErrors('descripcion')}" var="error"> ${error.defaultMessage}</g:each></p>
 							<p><g:each in="${foto?.errors?.getFieldErrors('archivo')}" var="error"> ${error.defaultMessage}</g:each></p>
-							<p><g:each in="${foto?.errors?.getFieldErrors('tyc')}" var="error"> ${error.defaultMessage}</g:each></p>
+							<p><g:each in="${foto?.errors?.getFieldErrors('nombre')}" var="error"> ${error.defaultMessage}</g:each></p>
+							<p><g:each in="${foto?.errors?.getFieldErrors('lugar')}" var="error"> ${error.defaultMessage}</g:each></p>
+							<p><g:each in="${foto?.errors?.getFieldErrors('email')}" var="error"> ${error.defaultMessage}</g:each></p>
+							<p><g:each in="${foto?.errors?.getFieldErrors('acepta_tyc')}" var="error"> ${error.defaultMessage}</g:each></p>
 						</div>
 					</div>
 				  </g:if>
           <g:form id="fotoForm" name="fotoForm" method="post" url="subir-foto-post" enctype="multipart/form-data">
-            <p>
-              <label></label>
-            </p>
             <table width="266" border="0" align="center" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td width="266"><p>
                   <label><strong><span class="style3 style5">Categoría <span class="style7">(*)</span></span></strong>
                   <select name="categoria" class="style6" id="categoria">
-                    <option>Plastico</option>
-                    <option selected="selected">Metal</option>
-                    <option>Madera</option>
-                    <option>Vidrio</option>
-                    <option>Papel</option>
-                    <option>Organicos</option>
-                    <option>Productos</option>
-                    <option>Otros</option>
+                    <option value="plastico">Plástico</option>
+                    <option value="metal" selected="selected">Metal</option>
+                    <option value="madera">Madera</option>
+                    <option value="vidrio">Vidrio</option>
+                    <option value="papel">Papel</option>
+                    <option value="organicos">Orgánicos</option>
+                    <option value="productos">Productos</option>
+                    <option value="otros">Otros</option>
                   </select>
                   </label>
                 </p>
                   <span class="style3 style5">
                   	<strong>
 	                  	Descripción
-                  	</strong>
+                  	</strong><span class="style7">(*)</span>
                         <label>
                         <br>
                         <input name="descripcion" type="text" class="style6" id="descripcion" size="35" value="${foto?.descripcion}"/>
                       </label>
                       <br>
                       <br>
-                          <input name="archivo" type="file" id="archivo" size="35" value="${foto?.archivo}">
-                          
+                      <span class="style3 style5">
+                      <strong>
+                      Lugar
+                      </strong>
+                        </span><span class="style7">(*)</span>
+				 
+                      <span class="style3 style5"><br>
+                      <label>
+                      	<input name="lugar" type="text" class="style6" id="lugar" size="40" value="${foto?.lugar}">
+                      </label>
+                      <br>
+                      <br>
+                  <input name="archivo" type="file" id="archivo" size="35" value="${foto?.archivo}">
+                  <br>
+                  </br>
+                    <strong><span class="style3 style5">Nombre y Apellido </span><span class="style7">(*)</span><span class="style3 style5"><br> 
+                  <label>
+                      <input name="nombre" type="text" class="style6" id="nombre" size="40" value="${foto?.nombre}">
+                      </label>
+                      
+                      <br>
+                      <br>
+                      </span></strong><strong><span class="style3 style5">E-mail  </span><span class="style7">(*)</span><span class="style3 style5"><br>
+                      <label>
+                      <input name="email" type="text" class="style6" id="email" size="40" value="${foto?.email }">
+                      </label>
+                      <br>
                     <label>
 	                    <br>
-	                    <br>
-	                    <input name="tyc" type="checkbox" id="tyc" checked="${foto?.tyc}">
+	                    <input name="acepta_tyc" type="checkbox" id="acepta_tyc" checked="${foto?.acepta_tyc}">
                     </label>
                     <strong>
                    	 	<span class="style3 style5 style9">Leí y acepto los términos y  condiciones </span>
@@ -167,7 +205,7 @@ body {
                   
                   
                   <a id="submit" href="" class="styleAdjuntarFoto">
-	                  <img src="./images/siguiente.jpg"" alt="proyecto re la marca editora" width="126" height="38">
+	                  <img src="./images/finalizar.jpg"" alt="proyecto re la marca editora" width="126" height="38">
                   </a>
                           
               </tr>

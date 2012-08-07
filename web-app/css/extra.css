@@ -237,7 +237,7 @@
 .errores {
 	display:block;
 	margin-top: 10px;
-	width: 300px;
+	width: 270px;
 	height:auto;
 	background-color: #FFEBE8;
 border-color: #DD3C10;
@@ -265,6 +265,7 @@ border-style: solid;
 	padding: 15px;
 	width: 473px;
 	display:hidden;
+	align: center;
 }
 .errorDescription {
 	top: 560px;

@@ -9,9 +9,9 @@ class FileUploaderService {
 	
     static transactional = true
 
-    def uploadImage(MultipartFile file, String name, String category) {
+    def uploadImage(MultipartFile file, String name, String categoria) {
 	def servletContext = ServletContextHolder.servletContext
-	def storagePath = servletContext.getRealPath(basePath + category.toLowerCase())
+	def storagePath = servletContext.getRealPath(basePath + categoria.toLowerCase())
 		
 	def storagePathDirectory = new File(storagePath)
 	if (!storagePathDirectory.exists()) {
@@ -21,6 +21,7 @@ class FileUploaderService {
 	}
 		
 	if (!file.isEmpty()) {
+//		foto.archivo = "${storagePath}/${name}"
 	    file.transferTo(new File("${storagePath}/${name}"))
 	}
     }

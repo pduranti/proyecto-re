@@ -40,9 +40,6 @@ body {
 </head>
 
 <body>
-
-<div id="fb-root"></div>
-
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
@@ -87,81 +84,61 @@ body {
 	      </tr>
 	    </tbody>
 	    </table>
-	    <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
-	    </td>
-      </tr>
-      <tr>
-        <td align="center">
-	       <div class="gracias ch-hide" id="gracias">Gracias por compartir tu foto!</div>
-	       <br></br>
-        </td>
-      </tr>
-      <tr>
-	    <td width="971" height="404"><table width="764" border="0" cellspacing="0" cellpadding="0">
-	      <tbody><tr>
-	        <td width="190" height="151" valign="top">
-	           <g:link url="/categoria?categ=plastico" class="style6">
-	        	<img src="./images/boton-plastico.png" alt="proyectoRE" width="182" height="183"/>
-	           </g:link>
-	        </td>
-	        <td width="192" valign="top">
-	           <g:link url="/categoria?categ=metal" class="style6">
-	        	<img src="./images/boton-metal.png" alt="proyectoRE" width="182" height="183"/>
-	           </g:link>
-	        </td>
-	        <td width="191" valign="top">
-	           <g:link url="/categoria?categ=vidrio" class="style6">
-	        	<img src="./images/boton-vidrio.png" alt="proyectoRE" width="182" height="183"/>
-	           </g:link>
-	        </td>
-	        <td width="191" valign="top">
-	          <g:link url="/categoria?categ=madera" class="style6">
-	        	<img src="./images/boton-madera.png" alt="proyectoRE" width="182" height="183"/>
-	          </g:link>
-	        </td>
-	      </tr>
-	      <tr>
-	        <td valign="top">
-	          <g:link url="/categoria?categ=papel" class="style6">
-	        	<img src="./images/boton-papel.png" alt="proyectoRE" width="182" height="183"/>
-	          </g:link>
-	        </td>
-	        <td>
-	           <g:link url="/categoria?categ=productos" class="style6">
-	        	<img src="./images/boton-productos.png" alt="proyectoRE" width="182" height="183"/>
-	           </g:link>
-	        </td>
-	        <td valign="top">
-	         <g:link url="/categoria?categ=organicos" class="style6">
-	        	<img src="./images/boton-organicos.png" alt="proyectoRE" width="182" height="183"/>
-	        </g:link>
-	        </td>
-	        <td valign="top">
-	           <g:link url="/categoria?categ=otros" class="style6">
-	        	<img src="./images/boton-otros.png" alt="proyectoRE" width="182" height="183"/>
-	           </g:link>
-	        </td>
-	      </tr>
-	      
-	    </tbody></table>
-	      <p><br>  
-	        <br>
-	    </p>
-	    </td>
-  </tr>
-      
-    </tbody></table></td>
-  </tr>
-</tbody></table>
 
+    <g:render template="/templates/category_nav" />
 
    
+    <p>
 
-<script>
-//alert(document.location.href);
-if (document.location.href.indexOf("#gracias") != -1) {
-	$("#gracias").removeClass("ch-hide");
-}
-</script>
+      <g:link url="/subir-foto">
+        <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+      </g:link>
+
+    <td width="744"><p><br>
+    
+    
+     <br></br>
+      <img src="./images/que-es-proyecto-re.jpg" alt="proyecto re" width="207" height="23">&nbsp;&nbsp;&nbsp;<img src="./images/linea.jpg" alt="proyecto re" width="288" height="7"></p>
+      <table width="550" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td width="550" class="style3 style5">Buscamos objetos de uso cotidiano que por necesidad, costumbre o simple ingenio han sido re-ciclados, re-usados, re-inventados, re-ubicados y muchos “re” más. La idea es fotografiarlos y publicarlos en un libro que hará historia.</td>
+        </tr>
+      </tbody></table>
+      <p class="style5"><img src="./images/ejemplos.jpg" alt="proyecto re" width="111" height="25">&nbsp;&nbsp;&nbsp;<img src="./images/linea.jpg" alt="proyecto re" width="288" height="7"></p>
+    <table width="550" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="196" height="151" valign="top"><span class="style5"><img src="./images/ejemplo-1-proyecto-re.jpg" alt="proyecto re la marca editora" width="158" height="143"></span></td>
+        <td width="196" valign="top"><span class="style5"><img src="./images/ejemplo-2-proyecto-re.jpg" alt="proyecto re la marca editora" width="158" height="143"></span></td>
+        <td width="158" valign="top"><span class="style5"><img src="./images/ejemplo-3-proyecto-re.jpg" alt="proyecto re la marca editora" width="157" height="143"></span></td>
+      </tr>
+      <tr>
+        <td valign="top"><strong><span class="style2"><span class="style4">ANTES:  </span><span class="style3">UN NEUMATICO.<br>
+        </span><span class="style4">AHORA: </span><span class="style3">UNA HAMACA. </span><span class="style3">        </span></span></strong></td>
+        <td><strong><span class="style2"><span class="style4">ANTES: </span><span class="style3">UN BIDÓN.<br>
+        </span><span class="style4">AHORA: </span><span class="style3">UNA SEÑAL DE “ESTE <br>
+        AUTO ESTÁ EN VENTA”.</span><span class="style3"></span></span></strong></td>
+        <td valign="top"><strong><span class="style2"><span class="style4">ANTES: </span><span class="style3">UN BARRIL DE NAFTA.<br>
+        </span><span class="style4">AHORA: </span><span class="style3">UNA PARRILLA. </span><span class="style3"></span></span></strong></td>
+      </tr>
+      <tr>
+        <td valign="top">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td valign="top"><div align="right"><img src="./images/mas-ejemplos.jpg" alt="proyecto re" width="90" height="24"></div></td>
+      </tr>
+    </tbody></table>
+    <p class="style5"><img src="./images/proyecto-re-foto.jpg" alt="proyecto re la marca editora andy marquine" width="534" height="97"></p>
+    <table width="535" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="535"><div align="center">
+        	<g:link url="subir-foto">
+        		<img src="./images/subir-mi-foto.jpg" alt="proyecto re la marca editora" width="304" height="183" border="0">
+        	</g:link>
+        </div></td>
+      </tr>
+    </tbody></table>
+  </tr>
+</tbody></table>
+<p>&nbsp;</p>
+
 
 </body></html>

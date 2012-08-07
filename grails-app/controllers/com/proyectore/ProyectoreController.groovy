@@ -16,27 +16,38 @@ class ProyectoreController {
 		render(view:"/home")
 	}
 	
+	def acercaDe = {
+		render(view:"/acerca-de")
+	}
+	
     def subirFoto = {
 		render(view:"/subi-tu-foto")
 	}
 	
 	def subirFotoPost = {
-		params.tyc = params.tyc ? true : false 
-		def foto = new Foto(params)
-
+		params.acepta_tyc = params.acepta_tyc ? true : false 
+		def foto = new Foto(
+			categoria : params.categoria.toLowerCase(),
+			descripcion : params.descripcion,
+			nombre : params.nombre,
+			lugar : params.lugar,
+			email : params.email,
+			acepta_tyc : params.acepta_tyc,
+			archivo: request.getFile("archivo").getOriginalFilename()
+			)
 		if (foto.isValid()) {
 		
 			MultipartFile file = request.getFile("archivo")
-			println file.getOriginalFilename()
+			def fileName = file.getOriginalFilename()
 			//println file.getContentType()
 			try {
-				fileUploaderService.uploadImage(file, file.getOriginalFilename(), foto.categoria)
+				fileUploaderService.uploadImage(file, fileName, foto.categoria)
 			} catch (Exception e) {
 			  println "ERROR subiendo foto." + e.toString()
 			}
-			redirect(url: "/registrate")
+			foto.save()
+			redirect(url: "/#gracias")
 		} else {
-		  println foto.errors
 		  render(view:"/subi-tu-foto", model: ['foto': foto])
 		}
 	}
@@ -47,7 +58,6 @@ class ProyectoreController {
 	
 	def registratePost = {
 		def user = new Usuario(params)
-		println user
 		if (user.isValid()) {
 			redirect(url: "../#gracias")
 		} else {
@@ -56,7 +66,15 @@ class ProyectoreController {
 	}
 	
 	def categoria = {
-	  def images = fileUploaderService.getImagesForCategory(params.categ)
-	  render(view: "/category", model: [categ: params.categ, images: images])
+	  def fotos =  Foto.findAllByCategoria(params.categ)
+	  if (params.id) {
+		  def selected = Foto.get(params.id)
+		  if (selected != null) {
+			  fotos.remove(selected)
+			  fotos.add(0, selected)
+		  }
+	  }
+	  //def images = fileUploaderService.getImagesForCategory(params.categ)
+	  render(view: "/category", model: [categ: params.categ, fotos: fotos])
 	}
 }

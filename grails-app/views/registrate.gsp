@@ -48,7 +48,7 @@ body {
   </tr>
   <tr>
     <td height="242">&nbsp;</td>
-    <td valign="top"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0" background="./images/la-marca-andy-marquine.jpg">
+    <td valign="top"><table width="319" height="149" border="0" cellpadding="0" cellspacing="0">
       <tbody><tr>
         <td width="216" height="149"><div align="right"><strong><span class="style2"><span class="style3">DE LOS EDITORES DE</span><br>
             <span class="style4">PROYECTO CARTELE</span><br>
