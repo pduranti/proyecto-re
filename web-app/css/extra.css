@@ -266,6 +266,7 @@ border-style: solid;
 	width: 473px;
 	display:hidden;
 	align: center;
+	margin-left:110px;
 }
 .errorDescription {
 	top: 560px;

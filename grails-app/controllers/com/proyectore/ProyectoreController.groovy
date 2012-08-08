@@ -1,7 +1,6 @@
 package com.proyectore
 
 import com.proyectore.Foto
-import com.proyectore.Usuario
 
 import org.springframework.web.multipart.MultipartFile
 
@@ -49,19 +48,6 @@ class ProyectoreController {
 			redirect(url: "/#gracias")
 		} else {
 		  render(view:"/subi-tu-foto", model: ['foto': foto])
-		}
-	}
-	
-	def registrate = {
-		render(view: "/registrate")
-	}
-	
-	def registratePost = {
-		def user = new Usuario(params)
-		if (user.isValid()) {
-			redirect(url: "../#gracias")
-		} else {
-		  render(view: "/registrate", model: [usuario:user])
 		}
 	}
 	

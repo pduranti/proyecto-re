@@ -91,7 +91,7 @@ body {
 	    </td>
       </tr>
       <tr>
-        <td align="center">
+        <td>
 	       <div class="gracias ch-hide" id="gracias">Gracias por compartir tu foto!</div>
 	       <br></br>
         </td>
