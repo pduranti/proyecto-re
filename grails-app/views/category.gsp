@@ -64,6 +64,23 @@ top:1300px;
 z-index: 1;
 }
 
+.share a {
+width: 86px;
+height:20px;
+background-repeat: no-repeat;
+display: inline-block;
+text-indent: -9999px;
+text-align: left;
+vertical-align: middle;
+opacity: .7;
+}
+
+#fbIS {
+background-image: url(./images/compartir.png);
+width: 86px;
+height:20px;
+}
+
 -->
 </style>
 
@@ -161,13 +178,17 @@ z-index: 1;
               		<span class="style8">Descripción:</span> <span class="style6">${it.descripcion}</span><br>
             		<span class="style8">Lugar:</span> <span class="style6">${it.lugar}</span><br><br>
             		<span class="style8">
-            		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+            			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+            		</span><br>
+            		<span class="share">
+	            		<a id="fbIS" 
+	            		href="http://www.facebook.com/dialog/feed?app_id=506377402710430&link=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&picture=http%3A%2F%2Fwww.proyectore.net%2Ffotos-upload%2F${it.categoria}%2F${it.archivo}&name=ProyectoRE&caption=Cuando%20los%20objetos%20se%20re-inventan&description=${it.descripcion}&redirect_uri=http://www.proyectore.net/close-popup.html"
+	            		
+	            		target="_blank" onclick="window.open(this.href+'&amp;display=popup&amp;', 'sharer','toolbar=0,status=0,width=536,height=346'); return false;"></a>
             		</span>
                 </p>
              </g:each>
           </div>
-          <br>
-          <br></br>
           
         <script>
 	        Galleria.run('#galleria', {
@@ -187,10 +208,14 @@ z-index: 1;
   <td></td>
       </tr>
     </tbody></table>
+    <br></br>
+    <br></br>
   </td>
   </tr>
 </tbody>
 </table>
+<br></br>
+<br></br>
 
  
 
