@@ -63,4 +63,13 @@ class ProyectoreController {
 	  //def images = fileUploaderService.getImagesForCategory(params.categ)
 	  render(view: "/category", model: [categ: params.categ, fotos: fotos])
 	}
+	
+	def foto = {
+	  def foto = Foto.get(params.id)
+	  def fotos =  Foto.findAllByCategoria(foto.categoria)
+	  fotos.remove(selected)
+          fotos.add(0, selected)
+	  
+	  render(view: "/foto", model: [foto: foto, fotos: fotos])
+	}
 }
