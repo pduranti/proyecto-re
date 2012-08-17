@@ -87,7 +87,7 @@ opacity: .7;
 }
 
 #fbIS {
-background-image: url(./images/compartir.png);
+background-image: url(/images/compartir.png);
 width: 86px;
 height:20px;
 }
@@ -106,9 +106,9 @@ height:20px;
 
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
-    <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274">
-    </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
+    <td width="13%" height="32" background="/images/franja-roja.jpg">&nbsp;</td>
+    <td width="31%" rowspan="2" valign="top"><img src="/images/logo.jpg" alt="proyecto re" width="458" height="274">
+    </td><td width="56%" background="/images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
     <td height="242">&nbsp;</td>
@@ -119,10 +119,10 @@ height:20px;
             <span class="style3">UNA IDEA DE </span><br>
           <span class="style4">ANDY MARQUINE</span></span></strong></div></td>
         <td width="93"><br>
-          &nbsp;&nbsp;&nbsp;<a href="http://www.lamarcaeditora.com/homeindex.php?lgr=arg" target="_blank"><img src="./images/la-marca-editora.png" alt="la marca editora" width="67" height="92" border="0"></a></td>
+          &nbsp;&nbsp;&nbsp;<a href="http://www.lamarcaeditora.com/homeindex.php?lgr=arg" target="_blank"><img src="/images/la-marca-editora.png" alt="la marca editora" width="67" height="92" border="0"></a></td>
       </tr>
     </tbody></table>
-      <img src="./images/linea-2.jpeg" alt="proyectoRE" width="308" height="8">
+      <img src="/images/linea-2.jpeg" alt="proyectoRE" width="308" height="8">
    </td>  
   </tr>
     </tbody></table>
@@ -136,15 +136,19 @@ height:20px;
 	      <tbody><tr>
 	        <td>
 	          <g:link url="/acerca-de" class="style6">
-	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
+	        	<img src="/images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
 	          </g:link>
-	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
-	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
-	        <img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
-	        <img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+	        <img src="/images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	        <img src="/images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
+		<a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
+		        <img src="/images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48">
+		</a>
+		<a href="https://twitter.com/proyecto_RE" target="_blank" class="no-line">
+		        <img src="/images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+		</a>
 	        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FproyectoRE%2F357558554296576&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
 	        
-	          <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
+	          <p><img src="/images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="/subir-foto"><img src="/images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
 	  
 	        </td>
 	        
@@ -162,7 +166,7 @@ height:20px;
 
     <p>
       <g:link url="/subir-foto">
-        <img src="./images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
+        <img src="/images/subi-tu-foto-menu.jpg" alt="la marca editora andy marquine" width="163" height="38">
       </g:link>
     </p>
     </td>

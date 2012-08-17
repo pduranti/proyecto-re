@@ -140,8 +140,12 @@ height:20px;
 	          </g:link>
 	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
 	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
-	        <img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
-	        <img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+	       <a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
+	        	<img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
+		</a>
+		<a href="https://twitter.com/proyecto_RE" target="_blank" class="no-line">
+	        	<img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+		</a>
 	        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FproyectoRE%2F357558554296576&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
 	        
 	          <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>

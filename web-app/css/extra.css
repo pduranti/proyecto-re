@@ -298,3 +298,7 @@ border-style: solid;
 .o {
 	display: none;
 }
+
+.no-line {
+  text-decoration:none;
+}
