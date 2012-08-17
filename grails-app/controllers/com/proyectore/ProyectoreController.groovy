@@ -19,7 +19,7 @@ class ProyectoreController {
 		render(view:"/acerca-de")
 	}
 	
-    def subirFoto = {
+        def subirFoto = {
 		render(view:"/subi-tu-foto")
 	}
 	
@@ -64,12 +64,18 @@ class ProyectoreController {
 	  render(view: "/category", model: [categ: params.categ, fotos: fotos])
 	}
 	
-	def foto = {
+	def verFoto = {
 	  def foto = Foto.get(params.id)
-	  def fotos =  Foto.findAllByCategoria(foto.categoria)
-	  fotos.remove(selected)
-          fotos.add(0, selected)
-	  
-	  render(view: "/foto", model: [foto: foto, fotos: fotos])
+          if (foto) {
+		  def fotos =  Foto.findAllByCategoria(foto.categoria)
+		  fotos.remove(foto)
+	          fotos.add(0, foto)
+	 
+		  render(view: "/foto", model: [foto: foto, fotos: fotos])
+          } else {
+            render("/notfound")
+          }
+         
 	}
 }
+

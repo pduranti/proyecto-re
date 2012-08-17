@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta property="og:title" content="ProyectoRE"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="http://www.proyectore.net:8080/foto/${foto.id}"/>
-<meta property="og:image" content="http://www.proyectore.net:8080/fotos-upload/${foto.categoria}/${foto.archivo}"/>
+<meta property="og:url" content="http://www.proyectore.net/foto/${foto.id}"/>
+<meta property="og:image" content="http://www.proyectore.net/fotos-upload/${foto.categoria}/${foto.archivo}"/>
 <meta property="og:site_name" content="ProyectoRE"/>
 <meta property="fb:admins" content="729950863"/>
 <meta property="og:description"
@@ -189,7 +189,7 @@ height:20px;
               		<span class="style8">Descripción:</span> <span class="style6">${it.descripcion}</span><br>
             		<span class="style8">Lugar:</span> <span class="style6">${it.lugar}</span><br><br>
             		<span class="style8">
-            	     <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%3A8080%2Ffoto%3F${it.id}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21&amp;appId=506377402710430" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+            	     <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Ffoto%2F${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21&amp;appId=506377402710430" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
                 </span><br>
             		<span class="share">
 	            		<a id="fbIS" 
