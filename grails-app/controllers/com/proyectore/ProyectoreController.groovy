@@ -19,7 +19,7 @@ class ProyectoreController {
 		render(view:"/acerca-de")
 	}
 	
-    def subirFoto = {
+        def subirFoto = {
 		render(view:"/subi-tu-foto")
 	}
 	
@@ -63,4 +63,19 @@ class ProyectoreController {
 	  //def images = fileUploaderService.getImagesForCategory(params.categ)
 	  render(view: "/category", model: [categ: params.categ, fotos: fotos])
 	}
+	
+	def verFoto = {
+	  def foto = Foto.get(params.id)
+          if (foto) {
+		  def fotos =  Foto.findAllByCategoria(foto.categoria)
+		  fotos.remove(foto)
+	          fotos.add(0, foto)
+	 
+		  render(view: "/foto", model: [foto: foto, fotos: fotos])
+          } else {
+            render("/notfound")
+          }
+         
+	}
 }
+

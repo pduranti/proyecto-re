@@ -17,6 +17,8 @@ class UrlMappings {
 		
 		"/categoria"(controller:"proyectore", action:"categoria")
 		
+		"/foto/$id"(controller:"proyectore", action:"verFoto")
+		
 		"500"(view:'/error')
 	}
 }
