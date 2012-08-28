@@ -1,6 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0063)http://www.viajerosunidos.com.ar/proyectore/subi-tu-foto-2.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="ProyectoRE" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.proyectore.net/categoria?categ=${categ}" />
+<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
 
 <title>.:: SUBI TU FOTO :: PROYECTO RE ::.</title>
 <style type="text/css">
@@ -131,12 +137,13 @@ height:20px;
 	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
 	        <img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
 	        <img src="./images/twitter-proyectore.jpg" alt="proyectoRE" width="48" height="48">
+	        
 	        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FproyectoRE%2F357558554296576&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:30px;" allowTransparency="true"></iframe>
 	        
 	          <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
 	  
 	        </td>
-	        
+	        http://www.proyectore.net/categoria?categ=plastico
 	      </tr>
 	    </tbody>
 	    </table>
@@ -178,11 +185,11 @@ height:20px;
               		<span class="style8">Descripción:</span> <span class="style6">${it.descripcion}</span><br>
             		<span class="style8">Lugar:</span> <span class="style6">${it.lugar}</span><br><br>
             		<span class="style8">
-            			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+            			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3D${it.categoria}%26id%3D${it.id}&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
             		</span><br>
             		<span class="share">
 	            		<a id="fbIS" 
-	            		href="http://www.facebook.com/dialog/feed?app_id=506377402710430&link=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dmetal%26id%3D${it.id}&picture=http%3A%2F%2Fwww.proyectore.net%2Ffotos-upload%2F${it.categoria}%2F${it.archivo}&name=ProyectoRE&caption=Cuando%20los%20objetos%20se%20re-inventan&description=${it.descripcion}&redirect_uri=http://www.proyectore.net/close-popup.html"
+	            		href="http://www.facebook.com/dialog/feed?app_id=506377402710430&link=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3Dm${it.categoria}%26id%3D${it.id}&picture=http%3A%2F%2Fwww.proyectore.net%2Ffotos-upload%2F${it.categoria}%2F${it.archivo}&name=ProyectoRE&caption=Cuando%20los%20objetos%20se%20re-inventan&description=${it.descripcion}&redirect_uri=http://www.proyectore.net/close-popup.html"
 	            		
 	            		target="_blank" onclick="window.open(this.href+'&amp;display=popup&amp;', 'sharer','toolbar=0,status=0,width=536,height=346'); return false;"></a>
             		</span>
