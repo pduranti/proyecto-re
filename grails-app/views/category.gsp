@@ -1,14 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<<<<<<< HEAD
-<!-- saved from url=(0063)http://www.viajerosunidos.com.ar/proyectore/subi-tu-foto-2.html -->
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta property="og:title" content="ProyectoRE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.proyectore.net/categoria?categ=${categ}" />
-<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
-=======
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
@@ -22,7 +12,6 @@
 <meta property="fb:admins" content="729950863"/>
 <meta property="og:description"
           content="Cuando los objetos se re-inventan."/>
->>>>>>> 5860fb56e187bb49a502700e8c8287449cbaae5c
 
 <title>.:: SUBI TU FOTO :: PROYECTO RE ::.</title>
 <style type="text/css">
