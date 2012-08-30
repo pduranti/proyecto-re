@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
+      xmlns:fb="https://www.facebook.com/2008/fbml"
+      xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta property="og:title" content="ProyectoRE"/>
@@ -65,44 +66,52 @@ body {
 .style10 {font-family: Arial, Helvetica, sans-serif}
 
 .comments {
-font-size: 11px;
-font-family: Arial, Helvetica, sans-serif;
-color: #BE2D29;
-position: absolute;
-width: 720px;
-height: 115px;
-top:1300px;
-z-index: 1;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #BE2D29;
+	position: absolute;
+	width: 720px;
+	height: 115px;
+	top:1300px;
+	z-index: 1;
 }
 
 .share a {
-width: 86px;
-height:20px;
-background-repeat: no-repeat;
-display: inline-block;
-text-indent: -9999px;
-text-align: left;
-vertical-align: middle;
-opacity: .7;
+	width: 86px;
+	height:20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	text-align: left;
+	vertical-align: middle;
+	opacity: .7;
 }
 
 #fbIS {
-background-image: url(./images/compartir.png);
-width: 86px;
-height:20px;
+	background-image: url(./images/compartir.png);
+	width: 86px;
+	height:20px;
 }
 
 -->
 </style>
 
  <script type="text/javascript" src="./js/jquery.js"></script>
- <script type="text/javascript" src="./js/galleria/galleria-1.2.7.min.js"></script>
+ <script type="text/javascript" src="./js/galleria/galleria-1.2.7.js"></script>
  <script type="text/javascript" src="./js/galleria/themes/classic/galleria.classic.min.js"></script>
  
  <link rel="stylesheet" href="./css/extra.css" />
  <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
  
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=506377402710430";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
@@ -151,7 +160,6 @@ height:20px;
 	          <p><img src="./images/subir-mi-foto-ok.png" alt="proyectoRE" width="478" height="90"><g:link url="subir-foto"><img src="./images/subir-mi-foto-ok-2.png" alt="proyectoRE" width="281" height="90"></img></g:link></p>
 	  
 	        </td>
-	        http://www.proyectore.net/categoria?categ=plastico
 	      </tr>
 	    </tbody>
 	    </table>
@@ -184,7 +192,7 @@ height:20px;
         </g:else>
       
        <g:if test="${fotos}">
-         <div id="galleria" style="width: 723px; height: 650px; ">
+         <div id="galleria" style="width: 723px; height: auto; ">
              <g:each in="${fotos}">
                 <img src="/fotos-upload/${it.categoria}/${it.archivo}">
                 <p>
@@ -200,15 +208,20 @@ height:20px;
 	            		href="http://www.facebook.com/dialog/feed?app_id=506377402710430&link=http%3A%2F%2Fwww.proyectore.net%2Fcategoria%3Fcateg%3D${it.categoria}%26id%3D${it.id}&picture=http%3A%2F%2Fwww.proyectore.net%2Ffotos-upload%2F${it.categoria}%2F${it.archivo}&name=ProyectoRE&caption=Cuando%20los%20objetos%20se%20re-inventan&description=${it.descripcion}&redirect_uri=http://www.proyectore.net/close-popup.html"
 	            		target="_blank" onclick="window.open(this.href+'&amp;display=popup&amp;', 'sharer','toolbar=0,status=0,width=536,height=346'); return false;"></a>
             		</span>
+            		<br></br>
+            		<span class="style6" style="align:center; width: 723px;">
+            		    Deja tu comentario<fb:comments href="http://www.proyectore.net/foto/24" num_posts="2" width="470"></fb:comments>
+            		    <br>
+            		    <div class="fb-comments" data-href="http://www.proyectore.net/foto/24" data-num-posts="2" data-width="470"></div>
+            		</span>
                 </p>
-                <div id="${it.id}" class="comments">Comentario!</div>
+                <div id="${it.id}" class="comments"></div>
              </g:each>
           </div>
           
         <script>
 	        Galleria.run('#galleria', {
 	            dataConfig: function(img) {
-		            alert($(img).next('.comments').html());
 	                return {
 	                    description: $(img).next('p').html()
 	                }
