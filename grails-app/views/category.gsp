@@ -103,6 +103,14 @@ height:20px;
  <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
  
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=506377402710430";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
@@ -186,7 +194,7 @@ height:20px;
        <g:if test="${fotos}">
          <div id="galleria" style="width: 723px; height: 650px; ">
              <g:each in="${fotos}">
-                <img src="/fotos-upload/${it.categoria}/${it.archivo}">
+                <img id="${it.id}" src="/fotos-upload/${it.categoria}/${it.archivo}">
                 <p>
                     <span class="style8" style="width:500px">Autor</span>:</span> <span class="style6">${it.nombre}</span>
                 	<br>
@@ -201,13 +209,17 @@ height:20px;
 	            		target="_blank" onclick="window.open(this.href+'&amp;display=popup&amp;', 'sharer','toolbar=0,status=0,width=536,height=346'); return false;"></a>
             		</span>
                 </p>
-                <div id="${it.id}" class="comments">Comentario!</div>
+		<fb:comments href="http://www.proyectore.net/foto/24" num_posts="2" width="470"></fb:comments>
+                <div id="fbdiv" class="comments"></div>
              </g:each>
           </div>
           
         <script>
 	        Galleria.run('#galleria', {
 	            dataConfig: function(img) {
+                            var fbdiv = document.getElementById("fbdiv");  
+			    fbdiv.innerHTML = "<fb:comments href='http://www.proyectore.net/foto/" + img.id + "' num_posts='2' width='739'></fb:comments>";  
+			    FB.XFBML.parse(fbdiv)
 		            alert($(img).next('.comments').html());
 	                return {
 	                    description: $(img).next('p').html()
