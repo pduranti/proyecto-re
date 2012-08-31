@@ -1680,7 +1680,8 @@ Galleria = function() {
                             if ( image ) {
                                 $( image ).width( big.image.width ).height( big.image.height )
                                     .attr( 'style', $( big.image ).attr('style') )
-                                    .attr( 'src', big.image.src );
+                                    .attr( 'src', big.image.src )
+                                    .attr('id', $(big.image).attr('id'));
                             }
                         }
                     });
@@ -1692,6 +1693,7 @@ Galleria = function() {
 
                 Utils.addTimer(false, function() {
                     // show the image after 50 ms
+                	
                     Utils.show( self.getActiveImage() );
 
                     if (typeof callback === 'function') {
@@ -2085,6 +2087,7 @@ Galleria = function() {
                         $( image.container ).show();
 
                         $( image.image ).animate({ opacity: 1 }, speed);
+                        
                         Utils.show( lightbox.elems.info, speed );
                     }
                 });
@@ -5564,7 +5567,7 @@ Galleria.Picture.prototype = {
                 // apply position
                 $( self.image ).css({
                     position : 'absolute',
-                    top :  getPosition(pos.top, 'height', height),
+                    top :  0,//getPosition(pos.top, 'height', height),
                     left : getPosition(pos.left, 'width', width)
                 });
 

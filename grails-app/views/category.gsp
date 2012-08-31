@@ -192,9 +192,9 @@ body {
         </g:else>
       
        <g:if test="${fotos}">
-         <div id="galleria" style="width: 723px; height: auto; ">
+         <div id="galleria" style="width: 723px; height: 790px; ">
              <g:each in="${fotos}">
-                <img src="/fotos-upload/${it.categoria}/${it.archivo}">
+                <img id="${it.id}" src="/fotos-upload/${it.categoria}/${it.archivo}" title="${it.id}">
                 <p>
                     <span class="style8" style="width:500px">Autor</span>:</span> <span class="style6">${it.nombre}</span>
                 	<br>
@@ -209,28 +209,62 @@ body {
 	            		target="_blank" onclick="window.open(this.href+'&amp;display=popup&amp;', 'sharer','toolbar=0,status=0,width=536,height=346'); return false;"></a>
             		</span>
             		<br></br>
-            		<span class="style6" style="align:center; width: 723px;">
-            		    Deja tu comentario<fb:comments href="http://www.proyectore.net/foto/24" num_posts="2" width="470"></fb:comments>
-            		    <br>
-            		    <div class="fb-comments" data-href="http://www.proyectore.net/foto/24" data-num-posts="2" data-width="470"></div>
-            		</span>
                 </p>
-                <div id="${it.id}" class="comments"></div>
              </g:each>
           </div>
           
         <script>
+        Galleria.ready(function(options) {
+
+            // this = the gallery instance
+            // options = the gallery options
+
+            this.bind('image', function(e) {
+                var imageId = $(e.galleriaData.original).attr('id');
+                var fbdiv = document.getElementById("fbdiv");
+    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'739\'></fb:comments>";  
+			    FB.XFBML.parse(fbdiv)
+            });
+        });
+        
 	        Galleria.run('#galleria', {
 	            dataConfig: function(img) {
+                    
 	                return {
 	                    description: $(img).next('p').html()
 	                }
 	            }
+
 	        });
+
         </script>
        </g:if>
        <br>
        <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+       <br>
+       <br></br>
+       <div id="fbdiv" class="comments"></div>
+       
+       
     </td>
   </tr>
   <tr >
