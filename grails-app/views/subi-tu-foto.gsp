@@ -197,7 +197,9 @@ body {
 	                    <input name="acepta_tyc" type="checkbox" id="acepta_tyc" checked="${foto?.acepta_tyc}">
                     </label>
                     <strong>
-                   	 	<span class="style3 style5 style9">Leí y acepto los términos y  condiciones </span>
+                   	<span class="style3 style5 style9">
+			   <a href="popupex.html" onclick="return popitup('tyc.html')">Leí y acepto los términos y  condiciones </a>
+			</span>
                     	<span class="style10">(*)</span>
                     </strong>
                     <strong><span class="style10"><br></span><br>
@@ -229,6 +231,17 @@ body {
   </tr>
 </tbody></table>
 <p>&nbsp;</p>
+
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=400,width=150');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
 
 <script>
 
