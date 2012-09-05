@@ -57,7 +57,8 @@ body {
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274">
+    <td width="31%" rowspan="2" valign="top">
+    	  <g:link url="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274"></g:link>
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
@@ -88,7 +89,10 @@ body {
 	          <g:link url="/acerca-de" class="style6">
 	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
 	          </g:link>
-	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	         <g:link url="mailto:contacto@proyectore.net" class="style6">
+	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32">
+	        </g:link>
+	         
 	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
 	        <a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
 	        	<img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
@@ -198,7 +202,7 @@ body {
                     </label>
                     <strong>
                    	<span class="style3 style5 style9">
-			   <a href="popupex.html" onclick="return popitup('tyc.html')">Leí y acepto los términos y  condiciones </a>
+			   <a href="TyC" onclick="return popitup('/tyc')">Leí y acepto los términos y  condiciones </a>
 			</span>
                     	<span class="style10">(*)</span>
                     </strong>
@@ -235,7 +239,7 @@ body {
 <script language="javascript" type="text/javascript">
 <!--
 function popitup(url) {
-	newwindow=window.open(url,'name','height=400,width=150');
+	newwindow=window.open(url,'name','height=400,width=350,toolbar=no,location=no,left=200,menubar=no,titlebar=no');
 	if (window.focus) {newwindow.focus()}
 	return false;
 }

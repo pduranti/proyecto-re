@@ -37,10 +37,13 @@ class ProyectoreController {
 		if (foto.isValid()) {
 		
 			MultipartFile file = request.getFile("archivo")
-			def fileName = file.getOriginalFilename()
-			//println file.getContentType()
+			def nameParts = file.getOriginalFilename().split("\\.")
+			def fileName = nameParts[0]
+			def ext = nameParts[1]
+			
+			def finalFileName = fileName + new Date().getTime() + "." + ext
 			try {
-				fileUploaderService.uploadImage(file, fileName, foto.categoria)
+				fileUploaderService.uploadImage(file, finalFileName, foto.categoria)
 			} catch (Exception e) {
 			  println "ERROR subiendo foto." + e.toString()
 			}

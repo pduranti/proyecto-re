@@ -77,7 +77,9 @@ body {
 	          <g:link url="/acerca-de" class="style6">
 	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
 	          </g:link>
-	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	           <g:link url="mailto:contacto@proyectore.net" class="style6">
+	      		  <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32">
+	        </g:link> 
 	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
 		<a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
 	        	<img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 

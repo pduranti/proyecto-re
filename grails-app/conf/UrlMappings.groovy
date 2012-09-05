@@ -20,5 +20,8 @@ class UrlMappings {
 		"/foto/$id"(controller:"proyectore", action:"verFoto")
 		
 		"500"(view:'/error')
+		
+		"/tyc"(view: "tyc")
+		
 	}
 }

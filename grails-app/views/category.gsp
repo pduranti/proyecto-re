@@ -116,7 +116,8 @@ body {
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="./images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274">
+    <td width="31%" rowspan="2" valign="top">
+      <g:link url="http://www.proyectore.net"><img src="./images/logo.jpg" alt="proyecto re" width="458" height="274"></g:link>
     </td><td width="56%" background="./images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
@@ -147,7 +148,9 @@ body {
 	          <g:link url="/acerca-de" class="style6">
 	        	<img src="./images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
 	          </g:link>
+	           <g:link url="mailto:contacto@proyectore.net" class="style6">
 	        <img src="./images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	        </g:link>
 	        <img src="./images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
 	       <a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
 	        	<img src="./images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48"> 
@@ -222,7 +225,7 @@ body {
             this.bind('image', function(e) {
                 var imageId = $(e.galleriaData.original).attr('id');
                 var fbdiv = document.getElementById("fbdiv");
-    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'739\'></fb:comments>";  
+    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'800\'></fb:comments>";  
 			    FB.XFBML.parse(fbdiv)
             });
         });
@@ -239,30 +242,10 @@ body {
 
         </script>
        </g:if>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
+
+
        <br></br>
-       <br></br>
-       <br></br>
-       <br></br>
-       <br></br>
-       <br>
-       <br></br>
-       <div id="fbdiv" class="comments"></div>
+       <div id="fbdiv" class="comments" style="top:1380px;"></div>
        
        
     </td>

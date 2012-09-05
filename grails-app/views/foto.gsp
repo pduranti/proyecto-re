@@ -95,19 +95,29 @@ height:20px;
 -->
 </style>
 
- <script type="text/javascript" src="./js/jquery.js"></script>
- <script type="text/javascript" src="./js/galleria/galleria-1.2.7.min.js"></script>
- <script type="text/javascript" src="./js/galleria/themes/classic/galleria.classic.min.js"></script>
+ <script type="text/javascript" src="/js/jquery.js"></script>
+ <script type="text/javascript" src="/js/galleria/galleria-1.2.7.min.js"></script>
+ <script type="text/javascript" src="/js/galleria/themes/classic/galleria.classic.min.js"></script>
  
- <link rel="stylesheet" href="./css/extra.css" />
- <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
+ <link rel="stylesheet" href="/css/extra.css" />
+ <link rel="stylesheet" href="/js/galleria/themes/classic/galleria.classic.css" />
  
 <body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=506377402710430";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <table width="1389" height="274" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="13%" height="32" background="/images/franja-roja.jpg">&nbsp;</td>
-    <td width="31%" rowspan="2" valign="top"><img src="/images/logo.jpg" alt="proyecto re" width="458" height="274">
+    <td width="31%" rowspan="2" valign="top">
+    <g:link url="http://www.proyectore.net"> 
+    <img src="/images/logo.jpg" alt="proyecto re" width="458" height="274">
+    </g:link>
     </td><td width="56%" background="/images/franja-roja.jpg">&nbsp;</td>
   </tr>
   <tr>
@@ -138,7 +148,10 @@ height:20px;
 	          <g:link url="/acerca-de" class="style6">
 	        	<img src="/images/boton-acerca-de.png" alt="proyectoRE" width="134" height="32"/> 
 	          </g:link>
-	        <img src="/images/boton-contacto.png" alt="proyectoRE" width="134" height="32"> 
+	           <g:link url="mailto:contacto@proyectore.net" class="style6">
+	        <img src="/images/boton-contacto.png" alt="proyectoRE" width="134" height="32">
+	        </g:link>
+	         
 	        <img src="/images/siguenos.png" alt="proyectoRE" width="83" height="32"> 
 		<a href="http://www.facebook.com/pages/proyectoRE/357558554296576" target="_blank" class="no-line">
 		        <img src="/images/facebook-proyectore.jpg" alt="proyectoRE" width="45" height="48">
@@ -184,7 +197,7 @@ height:20px;
         </g:else>
       
        <g:if test="${fotos}">
-         <div id="galleria" style="width: 723px; height: 650px; ">
+         <div id="galleria" style="width: 723px; height: 790px; ">
              <g:each in="${fotos}">
                 <img src="/fotos-upload/${it.categoria}/${it.archivo}">
                 <p>
@@ -205,7 +218,20 @@ height:20px;
              </g:each>
           </div>
           
-        <script>
+         <script>
+        Galleria.ready(function(options) {
+
+            // this = the gallery instance
+            // options = the gallery options
+
+            this.bind('image', function(e) {
+                var imageId = $(e.galleriaData.original).attr('id');
+                var fbdiv = document.getElementById("fbdiv");
+    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'800\'></fb:comments>";  
+			    FB.XFBML.parse(fbdiv)
+            });
+        });
+        
 	        Galleria.run('#galleria', {
 	            dataConfig: function(img) {
 	                return {
@@ -215,8 +241,10 @@ height:20px;
 	        });
         </script>
        </g:if>
-       <br>
-       <br>
+       
+        <br></br>
+       <div id="fbdiv" class="comments" style="top:1380px;"></div>
+       
     </td>
   </tr>
   <tr >
