@@ -25,6 +25,12 @@ class ProyectoreController {
 	
 	def subirFotoPost = {
 		params.acepta_tyc = params.acepta_tyc ? true : false 
+		MultipartFile file = request.getFile("archivo")
+		def nameParts = file.getOriginalFilename().split("\\.")
+		def fileName = nameParts[0]
+		def ext = nameParts[1]
+						
+		def finalFileName = fileName + new Date().getTime() + "." + ext
 		def foto = new Foto(
 			categoria : params.categoria.toLowerCase(),
 			descripcion : params.descripcion,
@@ -32,16 +38,10 @@ class ProyectoreController {
 			lugar : params.lugar,
 			email : params.email,
 			acepta_tyc : params.acepta_tyc,
-			archivo: request.getFile("archivo").getOriginalFilename()
+			archivo: finalFileName
 			)
 		if (foto.isValid()) {
 		
-			MultipartFile file = request.getFile("archivo")
-			def nameParts = file.getOriginalFilename().split("\\.")
-			def fileName = nameParts[0]
-			def ext = nameParts[1]
-			
-			def finalFileName = fileName + new Date().getTime() + "." + ext
 			try {
 				fileUploaderService.uploadImage(file, finalFileName, foto.categoria)
 			} catch (Exception e) {

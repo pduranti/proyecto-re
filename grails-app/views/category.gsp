@@ -7,10 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta property="og:title" content="ProyectoRE"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="http://www.proyectore.net/categoria?categ=${categ}"/>
-<meta property="og:image" content="http://www.proyectore.net/fotos-upload/plastico/04.jpg"/>
 <meta property="og:site_name" content="ProyectoRE"/>
-<meta property="fb:admins" content="729950863"/>
+<meta property="fb:admins" content="729950863,640912146"/>
 <meta property="og:description"
           content="Cuando los objetos se re-inventan."/>
 
@@ -98,7 +96,7 @@ body {
 
  <script type="text/javascript" src="./js/jquery.js"></script>
  <script type="text/javascript" src="./js/galleria/galleria-1.2.7.js"></script>
- <script type="text/javascript" src="./js/galleria/themes/classic/galleria.classic.min.js"></script>
+ <script type="text/javascript" src="./js/galleria/themes/classic/galleria.classic.js"></script>
  
  <link rel="stylesheet" href="./css/extra.css" />
  <link rel="stylesheet" href="./js/galleria/themes/classic/galleria.classic.css" />
@@ -225,7 +223,8 @@ body {
             this.bind('image', function(e) {
                 var imageId = $(e.galleriaData.original).attr('id');
                 var fbdiv = document.getElementById("fbdiv");
-    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'800\'></fb:comments>";  
+                fbdiv.innerHTML = '<div class="fb-comments" data-href="http://www.proyectore.net/foto/' + imageId + '" data-num-posts="4" data-width="723"></div>'
+    			//fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'4\' width=\'723\'></fb:comments>";  
 			    FB.XFBML.parse(fbdiv)
             });
         });

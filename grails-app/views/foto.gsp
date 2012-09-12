@@ -9,7 +9,7 @@
 <meta property="og:url" content="http://www.proyectore.net/foto/${foto.id}"/>
 <meta property="og:image" content="http://www.proyectore.net/fotos-upload/${foto.categoria}/${foto.archivo}"/>
 <meta property="og:site_name" content="ProyectoRE"/>
-<meta property="fb:admins" content="729950863"/>
+<meta property="fb:admins" content="729950863,640912146"/>
 <meta property="og:description"
           content="${foto.descripcion}"/>
 
@@ -97,7 +97,7 @@ height:20px;
 
  <script type="text/javascript" src="/js/jquery.js"></script>
  <script type="text/javascript" src="/js/galleria/galleria-1.2.7.min.js"></script>
- <script type="text/javascript" src="/js/galleria/themes/classic/galleria.classic.min.js"></script>
+ <script type="text/javascript" src="/js/galleria/themes/classic/galleria.classic.js"></script>
  
  <link rel="stylesheet" href="/css/extra.css" />
  <link rel="stylesheet" href="/js/galleria/themes/classic/galleria.classic.css" />
@@ -199,7 +199,7 @@ height:20px;
        <g:if test="${fotos}">
          <div id="galleria" style="width: 723px; height: 790px; ">
              <g:each in="${fotos}">
-                <img src="/fotos-upload/${it.categoria}/${it.archivo}">
+                <img id="${it.id}" src="/fotos-upload/${it.categoria}/${it.archivo}">
                 <p>
                     <span class="style8" style="width:500px">Autor</span>:</span> <span class="style6">${it.nombre}</span>
                 	<br>
@@ -227,7 +227,8 @@ height:20px;
             this.bind('image', function(e) {
                 var imageId = $(e.galleriaData.original).attr('id');
                 var fbdiv = document.getElementById("fbdiv");
-    			fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'800\'></fb:comments>";  
+                fbdiv.innerHTML = '<div class="fb-comments" data-href="http://www.proyectore.net/foto/' + imageId + '" data-num-posts="4" data-width="723"></div>'
+    			//fbdiv.innerHTML = "<fb:comments href=\'http://www.proyectore.net/foto/" + imageId + "\' num_posts=\'2\' width=\'800\'></fb:comments>";  
 			    FB.XFBML.parse(fbdiv)
             });
         });
@@ -244,7 +245,7 @@ height:20px;
        
         <br></br>
        <div id="fbdiv" class="comments" style="top:1380px;"></div>
-       
+    <br></br>    
     </td>
   </tr>
   <tr >

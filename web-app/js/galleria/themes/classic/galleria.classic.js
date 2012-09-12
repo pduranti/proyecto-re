@@ -48,14 +48,14 @@ Galleria.addTheme({
         }
 
         // toggle info
-        if ( options._toggleInfo === true ) {
-            info.bind( click, function() {
-                info.toggle();
-            });
-        } else {
-            info.show();
-            this.$('info-link, info-close').hide();
-        }
+//        if ( options._toggleInfo === true ) {
+//            info.bind( click, function() {
+//                info.toggle();
+//            });
+//        } else {
+//            info.show();
+//            this.$('info-link, info-close').hide();
+//        }
 
         // bind some stuff
         this.bind('thumbnail', function(e) {
@@ -81,7 +81,7 @@ Galleria.addTheme({
                 this.$('loader').show().fadeTo(200, 0.4);
             }
 
-            this.$('info').toggle( this.hasInfo() );
+           // this.$('info').toggle( this.hasInfo() );
 
             $(e.thumbTarget).css('opacity',1).parent().siblings().children().css('opacity', 0.6);
         });

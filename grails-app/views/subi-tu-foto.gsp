@@ -36,7 +36,7 @@ body {
 	color: #BE2327;
 	font-size: 8pt;
 }
-.style9 {font-size: 12px}
+.style9 {font-size: 12px; font-color:#BE2327}
 .style10 {color: #BE2327; font-size: 12px; }
 
 .styleAdjuntarFoto {
@@ -45,6 +45,12 @@ body {
   height: 69px;
   font-size: 18px;
 }
+
+a:link {color:#6F6561;}      /* unvisited link */
+a:visited {color:#6F6561;}  /* visited link */
+a:hover {color:#6F6561;}  /* mouse over link */
+a:active {color:#6F6561;}
+
 
 -->
 </style>
