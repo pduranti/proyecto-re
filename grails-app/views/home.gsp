@@ -98,7 +98,11 @@ body {
       </tr>
       <tr>
         <td>
-	       <div class="gracias ch-hide" id="gracias">Gracias por compartir tu foto!</div>
+	       <div class="gracias ch-hide" id="gracias">
+	       	<h3>¡Muchas gracias por subir tu foto!</h3>
+	       	<p>Cuando tengamos reunido material suficiente vamos a publicar un libro con las mejores fotos de proyectoRE.</p>
+	       	<p>¡Compartí las fotos que más te gusten con tus amigos!</p>
+       	   </div>
 	       <br></br>
         </td>
       </tr>

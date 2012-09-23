@@ -31,6 +31,7 @@ class Foto {
 		version false
 		archivo column: "archivo", sqlType: "varchar(1000)"
 		descripcion column: "descripcion", sqlType: "varchar(1000)"
+		sort id: "desc"
 	}
 	
 	def isValid() {

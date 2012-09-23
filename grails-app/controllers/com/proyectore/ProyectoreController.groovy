@@ -30,7 +30,7 @@ class ProyectoreController {
 		def fileName = nameParts[0]
 		def ext = nameParts[1]
 						
-		def finalFileName = fileName + new Date().getTime() + "." + ext
+		def finalFileName = fileName + "_" + new Date().getTime() + "." + ext
 		def foto = new Foto(
 			categoria : params.categoria.toLowerCase(),
 			descripcion : params.descripcion,
